@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header-scroll">
     <div class="container">
      <div class="menu header__menu">
        <a href="#" class="menu__link"><img src="img/logo.png" alt="Logo"></a>
@@ -38,7 +38,7 @@
   </header>
   <!-- /.header -->
   <main>
-    <div class="hero">
+    <section class="hero">
       <div class="container">
         <div class="hero__text">
           <h1 class="hero__text-title">
@@ -85,10 +85,132 @@
           <!-- /.button button__primary -->
         </div>
       </div>
-    </div>
+    </section>
     <!-- /.hero -->
+    <section class="services">
+      <div class="container">
+        <div class="services__text">
+          <h2 class="services__text-title">
+            Услуги и цены
+          </h2>
+          <span class="services__title-description">
+            Чаще всего, чтобы рассчитать стоимость ремонта нужен точный замер помещения, но вы можете ориентироваться на цены, указанные на сайте
+          </span> 
+          <!-- /.services__title-description -->
+        </div>
+        <!-- /.services__text -->
+        <div class="services__card">
+          <div class="row">
+            <div class="col-30">
+              <div class="card">
+                <div class="card__images">
+                  <img src="img/services/card-img01.jpg" alt="" class="card__img">
+                </div>
+                <!-- /.card__images -->
+                <div class="card__text">
+                  <h3 class="card__text-title">
+                    Косметический ремонт
+                  </h3>
+                  <span class="card__text-price">
+                    2 000 руб/м2
+                  </span> 
+                  <!-- /.card__text-price -->
+                  <span class="card__text-description">
+                    консультация специалиста
+                    оклейка стен обоями или покраска 
+                    укладка покрытия на пол 
+                    замена&nbsp;розеток и выключателей 
+                    установка сантехники покраска&nbsp;потолков<br> 
+                    покраска труб, радиаторов 
+                  </span> 
+                  <!-- /.card__text-description -->
+                </div>
+                <!-- /.card__text -->
+                <button class="button button__primary card__button">
+                  Рассчитать стоимость
+                </button> 
+                <!-- /.button button-primary card__button -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col-30 -->
+            <div class="col-30">
+              <div class="card">
+                <div class="card__images">
+                  <img src="img/services/card-img02.jpg" alt="" class="card__img">
+                </div>
+                <!-- /.card__images -->
+                <div class="card__text">
+                  <h3 class="card__text-title">
+                    Капитальный ремонт
+                  </h3>
+                  <span class="card__text-price">
+                    4 000 руб/м2
+                  </span> 
+                  <!-- /.card__text-price -->
+                  <span class="card__text-description">
+                    косметический ремонт, плюс:
+                    выравнивание и шпатлевка стен
+                    выравнивание полов 
+                    выравнивание потолков 
+                    разводка&nbsp;электропроводки 
+                    разводка сантехнических труб
+                    укладка плитки в санузлах 
+                  </span> 
+                  <!-- /.card__text-description -->
+                </div>
+                <!-- /.card__text -->
+                <button class="button button__primary card__button">
+                  Рассчитать стоимость
+                </button> 
+                <!-- /.button button-primary card__button -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col-30 -->
+            <div class="col-30">
+              <div class="card">
+                <div class="card__images">
+                  <img src="img/services/card-img03.jpg" alt="" class="card__img">
+                </div>
+                <!-- /.card__images -->
+                <div class="card__text">
+                  <h3 class="card__text-title">
+                    Европейский ремонт
+                  </h3>
+                  <span class="card__text-price">
+                    6 000 руб/м2
+                  </span> 
+                  <!-- /.card__text-price -->
+                  <span class="card__text-description card__description-size">
+                    капитальный ремонт, плюс: 
+                    двухуровневые потолки из гипсокартона
+                    или натяжные устройство потолков 
+                    в санузлах укладка паркетной доски 
+                    и тд устройство теплых полов 
+                  </span> 
+                  <!-- /.card__text-description -->
+                  <a href="#" class="card__list-item">развернуть список</a>
+                </div>
+                <!-- /.card__text -->
+                <button class="button button__primary card__button">
+                  Рассчитать стоимость
+                </button> 
+                <!-- /.button button-primary card__button -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col-30 -->
+          </div>
+        </div>
+        <!-- /.services__card -->
+      </div>
+    </section>
+    <!-- /.services -->
   </main>
   <!-- Подключение иконки -->
   <script src="https://kit.fontawesome.com/376a60a605.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

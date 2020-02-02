@@ -4,6 +4,23 @@
   margin: auto;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-30 {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+}
+
 .button {
   padding: 19px 50px;
   font-weight: 900;
@@ -45,6 +62,10 @@ img {
 
 .header {
   padding-top: 65px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .header__menu {
@@ -168,9 +189,113 @@ img {
   color: #000000;
 }
 
+.services {
+  padding: 65px 0px;
+}
+
+.services__text-title {
+  margin-bottom: 21px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.services__title-description {
+  display: block;
+  max-width: 450px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #666666;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 44px;
+  border: 1px solid #EEEEEE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 44px rgba(166, 166, 166, 0.25);
+          box-shadow: 0px 4px 44px rgba(166, 166, 166, 0.25);
+  border-radius: 10px;
+}
+
+.card__button {
+  padding: 19px 28px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.card__text {
+  padding: 23px 40px 30px 40px;
+}
+
+.card__text-title {
+  margin-bottom: 3px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.card__text-price {
+  display: block;
+  margin-bottom: 14px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #000000;
+}
+
+.card__text-description {
+  display: block;
+  max-width: 235px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #000000;
+}
+
+.card__img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card__description-size {
+  margin-bottom: 10px;
+}
+
+.card__list-item {
+  color: #000000;
+}
+
+@media screen and (max-width: 1290px) {
+  .hero {
+    margin-top: 92px;
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .hero {
     padding-top: 92px;
+    padding-bottom: 179px;
     background-size: 60%;
     background-position: 150% 40%;
   }
@@ -181,6 +306,27 @@ img {
   .hero__services-group {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+  }
+  .col-30 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(50% - 30px);
+            flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    padding: 0 15px;
   }
 }
 
@@ -228,7 +374,7 @@ img {
   .hero {
     padding-top: 42px;
     background-size: 65%;
-    background-position: 150% 50%;
+    background-position: 150% 30%;
   }
   .hero__text-title {
     max-width: 360px;
@@ -255,7 +401,7 @@ img {
 @media screen and (max-width: 575px) {
   .hero {
     background-size: 50%;
-    background-position: 130% 40%;
+    background-position: 130% 35%;
   }
   .hero__text-title {
     max-width: 290px;
