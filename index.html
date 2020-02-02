@@ -5,10 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Remont</title>
+  <!-- Подключение reset.css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Подключение шрифтов -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
   <!-- Подключение стилей -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+     <div class="menu header__menu">
+       <a href="#" class="menu__link"><img src="img/logo.png" alt="Logo"></a>
+       <!-- /.menu__link -->
+       <nav class="nav menu__nav">
+         <a href="#" class="nav__item">Портфолио</a>
+         <a href="#" class="nav__item">Цены</a>
+         <a href="#" class="nav__item">Отзывы</a>
+         <a href="#" class="nav__item">Контакты</a>
+       </nav>
+       <!-- /.nav menu__nav -->
+       <div class="header__contacts">
+         <a href="tel:74993981882" class="contacts">+7 499 398 18 82</a> 
+         <!-- /.contacts -->
+       </div>
+       <!-- /.contacts header__contacts -->
+     </div>
+     <!-- /.menu header__menu -->
+    </div>
+    <!-- /.container -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__text-title">
+            Делаем ремонт квартир, домов и офисов по дизайн-проекту
+          </h1>
+          <!-- /.hero__text-title -->
+          <span class="hero__text-description">
+            В Москве и Московской области
+          </span> 
+          <!-- /.hero__text-description -->
+        </div>
+        <!-- /.hero__text -->
+        <div class="hero__services">
+          <div class="hero__services-group">
+            <div class="hero__services-price">
+              <img src="img/hero/molar.svg" alt="">
+              <span class="hero__text-size">Цены <br>от&nbsp;3000 руб/м</span>
+            </div>
+            <!-- /.hero__services-price -->
+            <div class="hero__services-resoults">
+              <img src="img/hero/rolle.svg" alt="">
+              <span class="hero__group-text">Делаем с нуля до полной сдачи</span>
+            </div>
+            <!-- /.hero__services-resoults -->
+          </div>
+          <div class="hero__services-group">
+            <div class="hero__services-warranty">
+              <img src="img/hero/brouse.svg" alt="">
+              <span class="hero__text-size">Гарантия по&nbsp;договору </span>
+            </div>
+            <!-- /.hero__services-warranty -->
+            <div class="hero__services-portfolio">
+              <img src="img/hero/row.svg" alt="">
+              <span class="hero__group-text">Сделали ремонт в 300 объектах</span>
+            </div>
+            <!-- /.hero__services-portfolio -->
+          </div>
+        </div>
+        <!-- /.hero__services -->
+        <div class="hero__button">
+          <button class="button button__primary hero__btn">
+            Рассчитать стоимость
+          </button> 
+          <!-- /.button button__primary -->
+        </div>
+      </div>
+    </div>
+    <!-- /.hero -->
+  </header>
+  <!-- /.header -->
 </body>
 </html>
