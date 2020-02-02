@@ -1,11 +1,15 @@
 .header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
   padding-top: 65px
+  z-index: 99
   &__menu
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
     align-items: center
-    margin-bottom: 92px
+    justify-content: space-between
 .contacts
   font-size: 18px
   font-weight: 400
@@ -27,3 +31,10 @@
     &:hover
       border-bottom: 2px solid $yellow
       transition: 0.5s
+  &__close
+    display: none
+    list-style: none
+#responsive__menu
+  position: absolute
+  visibility: hidden
+  z-index: -9999

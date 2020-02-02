@@ -19,12 +19,16 @@
      <div class="menu header__menu">
        <a href="#" class="menu__link"><img src="img/logo.png" alt="Logo"></a>
        <!-- /.menu__link -->
+       <input type="checkbox" id="responsive__menu">
        <nav class="nav menu__nav">
          <a href="#" class="nav__item">Портфолио</a>
          <a href="#" class="nav__item">Цены</a>
          <a href="#" class="nav__item">Отзывы</a>
          <a href="#" class="nav__item">Контакты</a>
+         <li class="nav__close"><label for="responsive__menu"><i class="fas fa-times"></i></label></li>
+         <!-- /.nav__close -->
        </nav>
+       <label for="responsive__menu"><i class="fas fa-bars"></i></label>
        <!-- /.nav menu__nav -->
        <div class="header__contacts">
          <a href="tel:74993981882" class="contacts">+7 499 398 18 82</a> 
@@ -35,6 +39,9 @@
      <!-- /.menu header__menu -->
     </div>
     <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <main>
     <div class="hero">
       <div class="container">
         <div class="hero__text">
@@ -84,7 +91,8 @@
       </div>
     </div>
     <!-- /.hero -->
-  </header>
-  <!-- /.header -->
+  </main>
+  <!-- Подключение иконки -->
+  <script src="https://kit.fontawesome.com/376a60a605.js" crossorigin="anonymous"></script>
 </body>
 </html>
