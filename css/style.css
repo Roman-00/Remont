@@ -44,12 +44,7 @@ img {
 }
 
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
   padding-top: 65px;
-  z-index: 99;
 }
 
 .header__menu {
@@ -95,22 +90,12 @@ img {
   transition: 0.5s;
 }
 
-.nav__close {
-  display: none;
-  list-style: none;
-}
-
-#responsive__menu {
-  position: absolute;
-  visibility: hidden;
-  z-index: -9999;
-}
-
 .hero {
   padding-top: 279px;
   padding-bottom: 267px;
   background: url("../img/hero_bg.png") no-repeat;
   background-position: 80% 60%;
+  block-size: 70%;
 }
 
 .hero__button {
@@ -183,6 +168,22 @@ img {
   color: #000000;
 }
 
+@media screen and (max-width: 1170px) {
+  .hero {
+    padding-top: 92px;
+    background-size: 60%;
+    background-position: 150% 40%;
+  }
+  .hero__text-title {
+    max-width: 480px;
+    font-size: 30px;
+  }
+  .hero__services-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .nav__item {
     font-size: 14px;
@@ -197,11 +198,92 @@ img {
   .contacts {
     font-size: 16px;
   }
+  .hero {
+    padding-top: 92px;
+    background-size: 60%;
+    background-position: 150% 40%;
+  }
+  .hero__text-title {
+    max-width: 420px;
+    font-size: 26px;
+  }
+  .hero__text-size {
+    font-size: 13px;
+  }
+  .hero__services-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero__group-text {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 760px) {
-  .contacts {
+  .menu__nav {
     display: none;
+  }
+  .hero {
+    padding-top: 42px;
+    background-size: 65%;
+    background-position: 150% 30%;
+  }
+  .hero__text-title {
+    max-width: 360px;
+    font-size: 23px;
+  }
+  .hero__text-description {
+    font-size: 16px;
+  }
+  .hero__services-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .hero__services-price {
+    margin-bottom: 30px;
+  }
+  .hero__services-warranty {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero {
+    background-size: 50%;
+    background-position: 130% 30%;
+  }
+  .hero__text-title {
+    max-width: 290px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero__text-size {
+    font-size: 14px;
+  }
+  .hero__text-description {
+    font-size: 14px;
+  }
+  .hero__btn {
+    font-size: 14px;
+  }
+  .hero__group-text {
+    max-width: 115px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__text-title {
+    max-width: 260px;
+    font-size: 16px;
+  }
+  .hero__text-description {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

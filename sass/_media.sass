@@ -1,3 +1,15 @@
+@media screen and (max-width:1170px )
+  .hero
+    padding-top: 92px
+    background-size: 60%
+    background-position: 150% 40%
+    &__text
+      &-title
+        max-width: 480px
+        font-size: 30px
+    &__services
+      &-group
+        flex-wrap: wrap
 @media screen and (max-width:992px )
   .nav
     &__item
@@ -9,8 +21,69 @@
         border-bottom: 1px solid transparent
   .contacts
     font-size: 16px
+  .hero
+    padding-top: 92px
+    background-size: 60%
+    background-position: 150% 40%
+    &__text
+      &-title
+        max-width: 420px
+        font-size: 26px
+      &-size
+        font-size: 13px
+    &__services
+      &-group
+        flex-wrap: wrap
+        justify-content: space-around
+    &__group
+      &-text
+        font-size: 13px
 @media screen and (max-width:760px )
   .menu
     &__nav
-  .contacts
-    display: none
+      display: none
+  .hero
+    padding-top: 42px
+    background-size: 65%
+    background-position: 150% 30%
+    &__text
+      &-title
+        max-width: 360px
+        font-size: 23px
+      &-description
+        font-size: 16px
+    &__services
+      &-group
+        flex-direction: column
+        margin-bottom: 30px
+      &-price
+        margin-bottom: 30px
+      &-warranty
+        margin-bottom: 30px
+@media screen and (max-width:575px )
+  .hero
+    background-size: 50%
+    background-position: 130% 30%
+    &__text
+      &-title
+        max-width: 290px
+        font-size: 18px
+        line-height: 24px
+      &-size
+        font-size: 14px
+      &-description
+        font-size: 14px
+    &__btn
+      font-size: 14px
+    &__group
+      &-text
+        max-width: 115px
+        font-size: 14px
+@media screen and (max-width:375px )
+  .hero
+    &__text
+      &-title
+        max-width: 260px
+        font-size: 16px
+      &-description
+        margin-bottom: 50px
