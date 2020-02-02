@@ -92,9 +92,9 @@ img {
 
 .hero {
   padding-top: 279px;
-  padding-bottom: 267px;
+  padding-bottom: 247px;
   background: url("../img/hero_bg.png") no-repeat;
-  background-position: 80% 60%;
+  background-position: 80% 90%;
   block-size: 70%;
 }
 
@@ -228,7 +228,7 @@ img {
   .hero {
     padding-top: 42px;
     background-size: 65%;
-    background-position: 150% 30%;
+    background-position: 150% 50%;
   }
   .hero__text-title {
     max-width: 360px;
@@ -255,7 +255,7 @@ img {
 @media screen and (max-width: 575px) {
   .hero {
     background-size: 50%;
-    background-position: 130% 30%;
+    background-position: 130% 40%;
   }
   .hero__text-title {
     max-width: 290px;
@@ -278,6 +278,9 @@ img {
 }
 
 @media screen and (max-width: 375px) {
+  .hero {
+    padding-bottom: 92px;
+  }
   .hero__text-title {
     max-width: 260px;
     font-size: 16px;
