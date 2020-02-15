@@ -1,52 +1,44 @@
 .hero
-  padding-top: 279px
-  padding-bottom: 247px
-  background: url('../img/hero_bg.png') no-repeat
-  background-position: 80% 90%
-  block-size: 70%
-  &__button
-    margin-top: 69px
-  &__text
-    &-title
-      max-width: 569px
-      margin-bottom: 21px
-      font-family: 'Playfair Display', serif
-      font-weight: 900
-      font-size: 36px
-      line-height: 48px
-      color: $dark
+  padding-top: 215px
+  padding-bottom: 267px
+  background: url('../img/hero_bg.png')
+  background-repeat: no-repeat
+  background-position: bottom right 26%
+  &__title
+    max-width: 569px
+    margin-bottom: 21px
+    font-family: 'Playfair Display', sans-serif
+    font-weight: 900
+    font-size: 36px
+    line-height: 48px
+    color: $dark
     &-description
       display: block
       margin-bottom: 69px
-      font-weight: bold
+      font-weight: 700
       font-size: 18px
       line-height: 21px
       color: $dark
-    &-size
-      display: block
-      max-width: 107px
-      margin-left: 10px
-      font-size: 16px
-      font-weight: 400
-      line-height: 19px
-      color: $dark
-  &__services
+  &__icons
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
     max-width: 371px
-    &-price, &-resoults, &-warranty, &-portfolio
+    margin-bottom: 69px
+    &-content
       display: flex
       align-items: center
-    &-group
-      display: flex
-      justify-content: space-between
       margin-bottom: 25px
-      &:last-of-type
+      &:nth-last-child(1)
         margin-bottom: 0px
-  &__group
+      &:nth-last-child(2)
+        margin-bottom: 0px
     &-text
       display: block
-      max-width: 127px
-      margin-left: 10px
-      font-size: 16px
+      max-width: 130px
+      margin-left: 8px
       font-weight: 400
+      font-size: 16px
       line-height: 19px
-      color: $dark
+    &-size
+      max-width: 109px

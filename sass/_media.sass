@@ -1,104 +1,50 @@
-@media screen and (max-width:1290px )
+@media screen and (max-width:1390px )
   .hero
-    margin-top: 92px
+    background-position: bottom right -20%
 @media screen and (max-width:1170px )
   .hero
-    padding-top: 92px
-    padding-bottom: 179px
-    background-size: 60%
-    background-position: 150% 40%
-    &__text
-      &-title
-        max-width: 480px
-        font-size: 30px
-    &__services
-      &-group
-        flex-wrap: wrap
-  .row
-    display: flex
-    flex-wrap: wrap
-    flex-direction: row
-    align-items: top
-  .col
-    &-30
-      flex: 1 1 calc(50% - 30px)
-      max-width: calc(50% - 30px)
-      padding: 0 15px
+    background-size: 70%
+    background-position: bottom right -70%
 @media screen and (max-width:992px )
-  .nav
-    &__item
-      font-size: 14px
-      margin-right: 12px
-      &:last-of-type
-        margin-right: 0px
-      &:hover
-        border-bottom: 1px solid transparent
-  .contacts
-    font-size: 16px
-  .hero
-    padding-top: 92px
-    background-size: 60%
-    background-position: 150% 40%
-    &__text
-      &-title
-        max-width: 420px
-        font-size: 26px
-      &-size
-        font-size: 13px
-    &__services
-      &-group
-        flex-wrap: wrap
-        justify-content: space-around
-    &__group
-      &-text
-        font-size: 13px
-@media screen and (max-width:760px )
   .menu
     &__nav
+      &-link
+        font-size: 14px
+      &-link:first-child
+        margin-left: 0px
+  .hero
+    background-position: center right -80%
+    &__title
+      max-width: 329px
+      font-size: 20px
+      line-height: 24px
+      &-description
+        font-size: 16px
+@media screen and (max-width:760px )
+  .header
+    &__menu
       display: none
   .hero
-    padding-top: 42px
-    background-size: 65%
-    background-position: 150% 30%
-    &__text
-      &-title
-        max-width: 360px
-        font-size: 23px
-      &-description
-        font-size: 16px
-    &__services
-      &-group
-        flex-direction: column
+    &__icons 
+      max-width: 271px
+      &-content
         margin-bottom: 30px
-      &-price
-        margin-bottom: 30px
-      &-warranty
-        margin-bottom: 30px
+        &:nth-last-child(2)
+          margin-bottom: 30px
+          
 @media screen and (max-width:575px )
+  .phone
+    font-size: 16px
   .hero
-    background-size: 50%
-    background-position: 130% 35%
-    &__text
-      &-title
-        max-width: 290px
-        font-size: 18px
-        line-height: 24px
-      &-size
-        font-size: 14px
+    padding-top: 125px
+    padding-bottom: 45px
+    &__title
+      max-width: 290px
+      font-size: 18px
       &-description
+        margin-bottom: 56px
         font-size: 14px
-    &__btn
-      font-size: 14px
-    &__group
-      &-text
-        max-width: 115px
-        font-size: 14px
-@media screen and (max-width:375px )
-  .hero
-    padding-bottom: 92px
-    &__text
-      &-title
-        max-width: 260px
-        font-size: 16px
-      &-description
-        margin-bottom: 50px
+    &__icons
+      margin-bottom: 56px
+  
+  

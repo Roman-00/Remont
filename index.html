@@ -14,200 +14,77 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header" id="header-scroll">
+  <header class="header" id="header">
     <div class="container">
-     <div class="menu header__menu">
-       <a href="#" class="menu__link"><img src="img/logo.png" alt="Logo"></a>
-       <!-- /.menu__link -->
-       <nav class="nav menu__nav">
-         <a href="#" class="nav__item">Портфолио</a>
-         <a href="#" class="nav__item">Цены</a>
-         <a href="#" class="nav__item">Отзывы</a>
-         <a href="#" class="nav__item">Контакты</a>
-       </nav>
-       <!-- /.nav menu__nav -->
-       <div class="header__contacts">
-         <a href="tel:74993981882" class="contacts">+7 499 398 18 82</a> 
-         <!-- /.contacts -->
-       </div>
-       <!-- /.contacts header__contacts -->
-     </div>
-     <!-- /.menu header__menu -->
+      <div class="menu__content">
+        <a href="index.html" class="logo__link"><img src="img/logo.png" alt="logo" class="logo header__logo"></a>
+        <nav class="menu__nav header__menu">
+          <a href="#" class="menu__nav-link">Портфолио</a>
+          <!-- /.menu__nav-link -->
+          <a href="#" class="menu__nav-link">Цены</a>
+          <!-- /.menu__nav-link -->
+          <a href="#" class="menu__nav-link">Отзывы</a>
+          <!-- /.menu__nav-link -->
+          <a href="#" class="menu__nav-link">Контакты</a>
+          <!-- /.menu__nav-link -->
+        </nav>
+        <!-- /.menu-nav header__menu -->
+        <a href="tel:74993981882" class="phone header__phone">+7 499 398 18 82</a> 
+        <!-- /.phone header__phone -->
+      </div>
+      <!-- /.menu__content -->
     </div>
     <!-- /.container -->
   </header>
-  <!-- /.header -->
+  <!-- /#header.header -->
+
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
-        <div class="hero__text">
-          <h1 class="hero__text-title">
-            Делаем ремонт квартир, домов и офисов по дизайн-проекту
-          </h1>
-          <!-- /.hero__text-title -->
-          <span class="hero__text-description">
-            В Москве и Московской области
-          </span> 
-          <!-- /.hero__text-description -->
-        </div>
-        <!-- /.hero__text -->
-        <div class="hero__services">
-          <div class="hero__services-group">
-            <div class="hero__services-price">
-              <img src="img/hero/molar.svg" alt="">
-              <span class="hero__text-size">Цены <br>от&nbsp;3000 руб/м</span>
-            </div>
-            <!-- /.hero__services-price -->
-            <div class="hero__services-resoults">
-              <img src="img/hero/rolle.svg" alt="">
-              <span class="hero__group-text">Делаем с нуля до полной сдачи</span>
-            </div>
-            <!-- /.hero__services-resoults -->
+        <h1 class="hero__title">
+          Делаем ремонт квартир, домов и офисов по дизайн-проекту
+        </h1>
+        <!-- /.hero__title -->
+        <span class="hero__title-description">
+          В Москве и Московской области
+        </span> 
+        <!-- /.hero__title-description -->
+        <div class="hero__icons">
+          <div class="hero__icons-content">
+            <img src="img/hero/molar.svg" alt="icons" class="hero__icons-img">
+            <span class="hero__icons-text hero__icons-size">Цены от&nbsp;3&nbsp;000&nbsp;руб/м</span> 
+            <!-- /.hero__icons-text -->
           </div>
-          <div class="hero__services-group">
-            <div class="hero__services-warranty">
-              <img src="img/hero/brouse.svg" alt="">
-              <span class="hero__text-size">Гарантия по&nbsp;договору </span>
-            </div>
-            <!-- /.hero__services-warranty -->
-            <div class="hero__services-portfolio">
-              <img src="img/hero/row.svg" alt="">
-              <span class="hero__group-text">Сделали ремонт в 300 объектах</span>
-            </div>
-            <!-- /.hero__services-portfolio -->
+          <!-- /.hero__icons-content -->
+          <div class="hero__icons-content">
+            <img src="img/hero/rolle.svg" alt="icons" class="hero__icons-img">
+            <span class="hero__icons-text">Делаем с нуля до полной сдачи</span> 
+            <!-- /.hero__icons-text -->
           </div>
+          <!-- /.hero__icons-content -->
+          <div class="hero__icons-content">
+            <img src="img/hero/brouse.svg" alt="icons" class="hero__icons-img">
+            <span class="hero__icons-text">Гарантия по&nbsp;договору</span> 
+            <!-- /.hero__icons-text -->
+          </div>
+          <!-- /.hero__icons-content -->
+          <div class="hero__icons-content">
+            <img src="img/hero/row.svg" alt="icons" class="hero__icons-img">
+            <span class="hero__icons-text">Сделали ремонт в 300 объектах</span> 
+            <!-- /.hero__icons-text -->
+          </div>
+          <!-- /.hero__icons-content -->
         </div>
-        <!-- /.hero__services -->
-        <div class="hero__button">
-          <button class="button button__primary hero__btn">
-            Рассчитать стоимость
-          </button> 
-          <!-- /.button button__primary -->
-        </div>
+        <!-- /.hero__icons -->
+        <button class="button button__primary hero__button">Рассчитать стоимость</button> 
+        <!-- /.button hero__button -->
       </div>
+      <!-- /.container -->
     </section>
-    <!-- /.hero -->
-    <section class="services">
-      <div class="container">
-        <div class="services__text">
-          <h2 class="services__text-title">
-            Услуги и цены
-          </h2>
-          <span class="services__title-description">
-            Чаще всего, чтобы рассчитать стоимость ремонта нужен точный замер помещения, но вы можете ориентироваться на цены, указанные на сайте
-          </span> 
-          <!-- /.services__title-description -->
-        </div>
-        <!-- /.services__text -->
-        <div class="services__card">
-          <div class="row">
-            <div class="col-30">
-              <div class="card">
-                <div class="card__images">
-                  <img src="img/services/card-img01.jpg" alt="" class="card__img">
-                </div>
-                <!-- /.card__images -->
-                <div class="card__text">
-                  <h3 class="card__text-title">
-                    Косметический ремонт
-                  </h3>
-                  <span class="card__text-price">
-                    2 000 руб/м2
-                  </span> 
-                  <!-- /.card__text-price -->
-                  <span class="card__text-description">
-                    консультация специалиста
-                    оклейка стен обоями или покраска 
-                    укладка покрытия на пол 
-                    замена&nbsp;розеток и выключателей 
-                    установка сантехники покраска&nbsp;потолков<br> 
-                    покраска труб, радиаторов 
-                  </span> 
-                  <!-- /.card__text-description -->
-                </div>
-                <!-- /.card__text -->
-                <button class="button button__primary card__button">
-                  Рассчитать стоимость
-                </button> 
-                <!-- /.button button-primary card__button -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.col-30 -->
-            <div class="col-30">
-              <div class="card">
-                <div class="card__images">
-                  <img src="img/services/card-img02.jpg" alt="" class="card__img">
-                </div>
-                <!-- /.card__images -->
-                <div class="card__text">
-                  <h3 class="card__text-title">
-                    Капитальный ремонт
-                  </h3>
-                  <span class="card__text-price">
-                    4 000 руб/м2
-                  </span> 
-                  <!-- /.card__text-price -->
-                  <span class="card__text-description">
-                    косметический ремонт, плюс:
-                    выравнивание и шпатлевка стен
-                    выравнивание полов 
-                    выравнивание потолков 
-                    разводка&nbsp;электропроводки 
-                    разводка сантехнических труб
-                    укладка плитки в санузлах 
-                  </span> 
-                  <!-- /.card__text-description -->
-                </div>
-                <!-- /.card__text -->
-                <button class="button button__primary card__button">
-                  Рассчитать стоимость
-                </button> 
-                <!-- /.button button-primary card__button -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.col-30 -->
-            <div class="col-30">
-              <div class="card">
-                <div class="card__images">
-                  <img src="img/services/card-img03.jpg" alt="" class="card__img">
-                </div>
-                <!-- /.card__images -->
-                <div class="card__text">
-                  <h3 class="card__text-title">
-                    Европейский ремонт
-                  </h3>
-                  <span class="card__text-price">
-                    6 000 руб/м2
-                  </span> 
-                  <!-- /.card__text-price -->
-                  <span class="card__text-description card__description-size">
-                    капитальный ремонт, плюс: 
-                    двухуровневые потолки из гипсокартона
-                    или натяжные устройство потолков 
-                    в санузлах укладка паркетной доски 
-                    и тд устройство теплых полов 
-                  </span> 
-                  <!-- /.card__text-description -->
-                  <a href="#" class="card__list-item">развернуть список</a>
-                </div>
-                <!-- /.card__text -->
-                <button class="button button__primary card__button">
-                  Рассчитать стоимость
-                </button> 
-                <!-- /.button button-primary card__button -->
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.col-30 -->
-          </div>
-        </div>
-        <!-- /.services__card -->
-      </div>
-    </section>
-    <!-- /.services -->
+    <!-- /#hero.hero -->
   </main>
+
+
   <!-- Подключение иконки -->
   <script src="https://kit.fontawesome.com/376a60a605.js" crossorigin="anonymous"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
