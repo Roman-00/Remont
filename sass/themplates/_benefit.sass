@@ -16,9 +16,19 @@
       line-height: 150%
       color: $grey
   &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
     &-block
       display: flex
       align-items: center
+      margin-bottom: 50px
+      &:nth-last-child(1)
+        margin-bottom: 0px
+      &:nth-last-child(2)
+        margin-bottom: 0px
+      &:nth-last-child(3)
+        margin-bottom: 0px
   &__block
     &-text
       margin-left: 28px
