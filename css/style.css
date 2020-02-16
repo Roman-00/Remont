@@ -375,6 +375,60 @@ img {
   border: 2px solid #f0bc5e;
 }
 
+.benefit {
+  padding-bottom: 65px;
+}
+
+.benefit__title {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.benefit__title-description {
+  display: block;
+  max-width: 511px;
+  margin-bottom: 95px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.benefit__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefit__block-text {
+  margin-left: 28px;
+}
+
+.benefit__block-title {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.benefit__block-description {
+  display: block;
+  max-width: 261px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #666666;
+}
+
 @media screen and (max-width: 1390px) {
   .hero {
     background-position: bottom right -20%;
