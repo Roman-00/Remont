@@ -16,10 +16,48 @@
       color: $grey
 .card
   max-width: 358px
+  padding-bottom: 44px
   overflow-x: hidden
+  margin: 10px
   border: 1px solid #EEEEEE
   box-sizing: border-box
   box-shadow: 0px 4px 44px rgba(166, 166, 166, 0.25)
   border-radius: 10px
   &__text
-    padding: 23px 41px 44px 41px
+    padding: 0px 41px
+  &__title
+    margin-top: 23px
+    margin-bottom: 3px
+    font-family: 'Playfair Display', sans-serif
+    font-weight: 900
+    font-size: 22px
+    line-height: 140%
+    color: $dark
+  &__price
+    display: block
+    margin-bottom: 14px
+    font-family: 'Playfair Display', sans-serif
+    font-weight: 400
+    font-size: 24px
+    line-height: 140%
+    color: $dark
+  &__description
+    display: block
+    max-width: 274px
+    margin-bottom: 30px
+    font-weight: 400
+    font-size: 14px
+    line-height: 170%
+    color: $dark
+    &-list
+      display: block
+      margin-top: 30px
+      font-size: 14px
+      font-weight: 400
+      line-height: 170%
+      color: $dark
+    &-aside
+      margin-bottom: 20px
+  &__button
+    display: block
+    margin: auto

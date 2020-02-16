@@ -4,6 +4,17 @@
   margin: auto;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .button {
   padding: 19px 50px;
   font-weight: 900;
@@ -179,7 +190,9 @@ img {
 
 .card {
   max-width: 358px;
+  padding-bottom: 44px;
   overflow-x: hidden;
+  margin: 10px;
   border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -189,7 +202,55 @@ img {
 }
 
 .card__text {
-  padding: 23px 41px 44px 41px;
+  padding: 0px 41px;
+}
+
+.card__title {
+  margin-top: 23px;
+  margin-bottom: 3px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.card__price {
+  display: block;
+  margin-bottom: 14px;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.card__description {
+  display: block;
+  max-width: 274px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.card__description-list {
+  display: block;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 170%;
+  color: #000000;
+}
+
+.card__description-aside {
+  margin-bottom: 20px;
+}
+
+.card__button {
+  display: block;
+  margin: auto;
 }
 
 @media screen and (max-width: 1390px) {
@@ -206,6 +267,11 @@ img {
 }
 
 @media screen and (max-width: 992px) {
+  .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .menu__nav-link {
     font-size: 14px;
   }
@@ -280,6 +346,23 @@ img {
   }
   .services__title-description {
     max-width: 290px;
+    font-size: 14px;
+  }
+  .card__text {
+    padding: 0px 20px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__price {
+    font-size: 18px;
+  }
+  .card__description {
+    max-width: 255px;
+    font-size: 13px;
+  }
+  .card__button {
+    padding: 20px 44px;
     font-size: 14px;
   }
 }
