@@ -3,9 +3,23 @@ $(document).ready(function() {
     loop: true,
     speed: 400,
     spaceBetween: 100,
+    navigation: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
+      clickable: !0,
+    },
+  });
+
+  var feedSwiper = new Swiper('.feedback-container', {
+    loop: true,
+    speed: 400,
+    spaceBetween: 100,
+    navigation: false,
+    pagination: {
+      el: '.steps__swiper-pagination',
+      type: 'bullets',
+      clickable: !0,
     },
   });
 });
