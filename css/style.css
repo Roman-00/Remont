@@ -108,6 +108,13 @@ img {
   color: #000000;
 }
 
+.menu-bg {
+  background: #f0bc5e;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #ffffff;
+}
+
 .hero {
   padding-top: 215px;
   padding-bottom: 267px;

@@ -22,4 +22,12 @@ $(document).ready(function() {
       clickable: !0,
     },
   });
+
+  $(window).on('scroll', function() {
+    if($(window).scrollTop()) {
+      $('header').addClass('menu-bg');
+    } else {
+      $('header').removeClass('menu-bg');
+    }
+  });
 });
